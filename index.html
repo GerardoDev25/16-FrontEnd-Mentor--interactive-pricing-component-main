@@ -1,39 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+   <head>
+      <meta charset="UTF-8" />
+      <meta
+         name="viewport"
+         content="width=device-width, initial-scale=1.0"
+      />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive pricing component</title>
+      <link
+         rel="icon"
+         type="image/png"
+         sizes="32x32"
+         href="./images/favicon-32x32.png"
+      />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+      <!-- ? google font -->
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
 
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
+      <link
+         href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"
+         rel="stylesheet"
+      />
 
-  Pageviews
-  $ /month
+      <!-- ? styles -->
+      <link rel="stylesheet" href="./css/normalize.css" />
+      <link rel="stylesheet" href="./css/style.css" />
 
-  Monthly Billing
-  Yearly Billing 25% discount
+      <title>
+         Frontend Mentor | Interactive pricing component
+      </title>
+   </head>
+   <body>
+      <!-- ************************************* -->
+      <!-- ? ************** header ************* -->
+      <!-- ************************************* -->
 
-  Unlimited websites
-  100% data ownership
-  Email reports
+      <header class="header">
+         <h1 class="header__title">
+            Simple, traffic-based pricing
+         </h1>
+         <p class="header__paragraph">
+            Sign-up for our 30-day trial. No credit card
+            required.
+         </p>
+      </header>
 
-  Start my trial
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      <!-- ************************************* -->
+      <!-- ? ************** main *************** -->
+      <!-- ************************************* -->
+      <main class="main">
+         <form class="form">
+            <!-- ************************************* -->
+            <!-- ? ************** top **************** -->
+            <div class="top">
+               <p class="top__pages">Pageviews</p>
+               <p class="top__price">$ /month</p>
+            </div>
+
+            <!-- ************************************* -->
+            <!-- ? ************* middle ************** -->
+            <div class="middle">
+               <input
+                  type="range"
+                  name="form_range"
+                  id="form_range"
+               />
+               <div class="billing">
+                  <label
+                     class="billing__paragraph text-paragraph"
+                     for="form_checkbox"
+                  >
+                     Monthly Billing
+                  </label>
+                  <input
+                     type="checkbox"
+                     name="form_checkbox"
+                     id="form_checkbox"
+                  />
+               </div>
+               <div class="discount">
+                  <p class="discount__paragraph text-paragraph">
+                     Yearly Billing
+                  </p>
+                  <p class="discount__paragraph-last">
+                     25% discount
+                  </p>
+               </div>
+            </div>
+
+            <!-- ************************************* -->
+            <!-- ? ************* footer ************** -->
+            <div class="footer">
+               <ul class="list">
+                  <li class="list__item">Unlimited websites</li>
+                  <li class="list__item">100% data ownership</li>
+                  <li class="list__item">Email reports</li>
+               </ul>
+               <input type="submit" value="Start my trial" />
+            </div>
+         </form>
+      </main>
+   </body>
 </html>
