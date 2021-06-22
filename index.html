@@ -49,22 +49,38 @@
       <!-- ? ************** main *************** -->
       <!-- ************************************* -->
       <main class="main">
-         <form class="form">
+         <form class="form" id="form">
             <!-- ************************************* -->
             <!-- ? ************** top **************** -->
             <div class="top">
-               <p class="top__pages">Pageviews</p>
-               <p class="top__price">$ /month</p>
+               <p class="top__pages">
+                  <span
+                     class="top__pages-insert"
+                     id="top__pages-insert"
+                     >100k</span
+                  >
+                  Pageviews
+               </p>
+
+               <input
+                  type="range"
+                  name="form_range"
+                  id="form_range"
+                  class="top__input"
+               />
+               <p class="top__price">
+                  <strong
+                     class="top__price-insert"
+                     id="top__price-insert"
+                     >$16.00</strong
+                  >
+                  / month
+               </p>
             </div>
 
             <!-- ************************************* -->
             <!-- ? ************* middle ************** -->
             <div class="middle">
-               <input
-                  type="range"
-                  name="form_range"
-                  id="form_range"
-               />
                <div class="billing">
                   <label
                      class="billing__paragraph text-paragraph"
@@ -83,7 +99,10 @@
                      Yearly Billing
                   </p>
                   <p class="discount__paragraph-last">
-                     25% discount
+                     -25%
+                     <span class="discount__paragraph-hidden"
+                        >discount</span
+                     >
                   </p>
                </div>
             </div>
@@ -92,13 +111,27 @@
             <!-- ? ************* footer ************** -->
             <div class="footer">
                <ul class="list">
-                  <li class="list__item">Unlimited websites</li>
-                  <li class="list__item">100% data ownership</li>
-                  <li class="list__item">Email reports</li>
+                  <li class="list__item">
+                     <div class="list__icon"></div>
+                     Unlimited websites
+                  </li>
+                  <li class="list__item">
+                     <div class="list__icon"></div>
+                     100% data ownership
+                  </li>
+                  <li class="list__item">
+                     <div class="list__icon"></div>
+                     Email reports
+                  </li>
                </ul>
-               <input type="submit" value="Start my trial" />
+               <input
+                  type="submit"
+                  value="Start my trial"
+                  class="footer__submit"
+               />
             </div>
          </form>
       </main>
+      <script src="script.js"></script>
    </body>
 </html>
