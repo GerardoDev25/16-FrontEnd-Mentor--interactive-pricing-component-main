@@ -429,7 +429,6 @@ input[type="range"]::-ms-thumb:active {
       grid-template-columns: 6fr 4fr;
       grid-template-rows: 6fr 4fr;
       height: 7rem;
-      /* padding-top: 2rem; */
       margin-bottom: 3.5rem;
    }
    .top__pages {
