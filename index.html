@@ -62,12 +62,21 @@
                   Pageviews
                </p>
 
-               <input
-                  type="range"
-                  name="form_range"
-                  id="form_range"
-                  class="top__input"
-               />
+               <div class="slider__container">
+                  <input
+                     type="range"
+                     min="0"
+                     max="4"
+                     value="2"
+                     name="form_range"
+                     id="form_range"
+                     class="top__input"
+                  />
+                  <div
+                     class="slider_rail"
+                     id="slider_rail"
+                  ></div>
+               </div>
                <p class="top__price">
                   <strong
                      class="top__price-insert"
@@ -87,12 +96,14 @@
                      for="form_checkbox"
                   >
                      Monthly Billing
+                     <input
+                        type="checkbox"
+                        name="form_checkbox"
+                        id="form_checkbox"
+                        class="form_checkbox"
+                     />
+                     <div class="form__checked"></div>
                   </label>
-                  <input
-                     type="checkbox"
-                     name="form_checkbox"
-                     id="form_checkbox"
-                  />
                </div>
                <div class="discount">
                   <p class="discount__paragraph text-paragraph">
