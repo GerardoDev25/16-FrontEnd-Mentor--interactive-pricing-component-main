@@ -421,7 +421,8 @@ input[type="range"]::-ms-thumb:active {
    .form {
       width: 100%;
       padding: 2rem;
-      padding-bottom: o;
+      padding-bottom: 0;
+      box-shadow: 0 0 25px -5px hsla(240, 2%, 19%, 0.3);
    }
 
    .top {
